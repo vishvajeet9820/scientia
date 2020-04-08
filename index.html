@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <!-- Settings of the HTML document -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu For Next</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/47859ed9c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity = "sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="../Images/logo1.png" height="40" width="120"/>
+        </div>
+        <span class="fa fa-bars menu-icon"></span>
+        <div class="header-right">
+          <a href="#" class = "btn login2">Sign In</a>
+          <a href="#" class="btn login">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <!-- Top -->
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>What To <span>Code ?</span></h1>
+        <h1>Need Some Help</h1>
+        <p>Edu For Next is an e-learning portal which lets you move ahead of the barriers.</p>
+        <p>
+          A user friendly driven fully equipped coding platform to enjoy your code.
+        </p>
+        <div class="btn-wrapper">
+          <a href="#" class="btn signup">Sign up with Email</a>
+          <p>or</p>
+          <a href="#" class="btn facebook"
+            ><span class="fa fa-facebook"></span>Sign up with Facebook</a
+          >
+          <a href="#" class="btn twitter"
+            ><span class="fa fa-twitter"></span>Sign up with Twitter</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Sign up modal -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <i class="fa fa-2x fa-times">×</i>
+        </div>
+        <div id="signup-form">
+          <h2>Sign up with email</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="Email" />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Password"
+            />
+            <div id="submit-btn">Sign up</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Lesson -->
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h1>Browse our Top Courses</h1>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="../Images/html-lesson-icon.png" height = "200" width="200" />
+              <p>HTML & CSS</p>
+            </div>
+            <p class="text-contents">
+              HTML is the standard markup language for Web pages.CSS
+              describes how HTML elements are to be displayed on screen, paper, or in other media.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="../Images/jquerry-lesson-icon.png" height = "200" width="200" />
+              <p>jQuery</p>
+            </div>
+            <p class="text-contents">
+              jQuery is a JavaScript library designed to simplify HTML DOM tree
+              traversal and manipulation, as well as event handling, CSS animation, and Ajax.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="../Images/ruby-lesson-icon.png" height = "200" width="200" />
+              <p>Ruby</p>
+            </div>
+            <p class="text-contents">
+              A dynamic, open source programming language with a focus on simplicity
+              and productivity. It has an elegant syntax that is natural to read and easy to write.
+            </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="../Images/php-lesson-icon.png" height = "200" width="200" />
+              <p>PHP</p>
+            </div>
+            <p class="text-contents">
+              PHP is a popular general-purpose scripting language that is
+              especially suited to web development. It was originally created by Rasmus Lerdorf
+              in 1994.
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Message -->
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Always dream to be a professional programmer?</h2>
+          <h3>Let's completely involve ousrselves in the coding zone!</h3>
+        </div>
+        <span class="btn message">Are you Ready!</span>
+        <script type = "text/javascript">
+          var color = ["#222f3e" , "#f368e0" , "#ee5253" , "#0abde3" , "#222f3e" , "#5f27cd"];
+          var i = 0;
+          document.querySelector("button").addEventListener("click" , 
+            function(){
+            i = i < color.length ? ++i : 0;
+          document.querySelector("message-wrapper").style.background = color[i]
+          })
+        </script>
+      </div>
+    </div>
+    <div class="about">
+      <p>Follow us:-</p>
+      <ul>
+        <li><i class="fab fa-3x fa-facebook"></i></li>
+        <li><i class="fab fa-3x fa-twitter-square"></i></li>
+        <li><i class="fab fa-3x fa-instagram"></i></li>
+        <li><i class="fab fa-3x fa-linkedin-in"></i></li>
+      </ul>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+          <img src="../Images/header-logo.png" />
+          <h1>Enjoy world of limitless path.</h1>
+      </div>  
+      <script type="text/javascript" src="script.js"></script>
+    </footer>
+  </body>
+</html>
